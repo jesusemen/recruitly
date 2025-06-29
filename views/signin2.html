@@ -1,0 +1,30 @@
+---
+layout: examples
+title: Signin Template
+extra_css:
+  - "signin.css"
+body_class: "text-center"
+include_js: false
+---
+
+<!-- Code refactor by Seyi:
+Input validation for Email and Password to enhance security against data injection
+Form action created for when you need to do something with user input -->
+<main class="form-signin w-100 m-auto"></main>
+<form action="" method="" >
+  <img class="mb-4" src="/docs/{{< param docs_version >}}/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+  <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+  <div class="form-floating">
+    <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com" required>
+    <label for="floatingInput">Email address</label>
+  </div>
+
+  <div class="form-floating">
+    <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" required minlength="6">
+    <label for="floatingPassword">Password</label>
+  </div>
+
+  <div class="checkbox mb-3">
+    <label>
+      
